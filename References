@@ -1,10 +1,16 @@
 # References
+
 The General Putnam Motel Diner API contains the following references:
-POST/meal/lunch/burgerMeal Attributes 
-For the full version of the App, this will be expanded to include additional order items. For the purpose of this POC, only the burger meal is documented. The burger JSON object is included in the POST request which is sent to the kitchen. When an OK response is received, the order is printed in the kitchen so the cook can start cooking.
-Attribute	Data Type	Req.	Description	Default
-bunType	string	Y	The type of bun for the burger.
-Either "wholeWheat", "white", or "glutenFree".	"white"
+
+## POST/meal/lunch/burgerMeal Attributes 
+
+For the full version of the App, this will be expanded to include additional order items. 
+For the purpose of this POC, only the burger meal is documented. 
+The burger JSON object is included in the POST request which is sent to the kitchen. 
+When an OK response is received, the order is printed in the kitchen so the cook can start cooking.
+
+Attribute   | Data Type    | Req. | Description                | Default 
+bunType     | string | Y	| The type of bun for the burger. Either "wholeWheat", "white", or "glutenFree".	| "white" |
 burger			Lists the components of the main item of the burgerMeal, the burger itself. 	
 condiment1	string	N	1st condiment selection on the burger.
 Either "none", "ketchup", or "secretSauce".	"none"
@@ -50,8 +56,10 @@ topping3	string	N	3rd topping selection on the burger.
 Either lettuce, tomato, pickles, or onion.	"none"
 topping4	string	N	4th topping selection on the burger.
 Either lettuce, tomato, pickles, or onion.	"none"
-Request Example (cURL)
-curl -H "Content-Type: application/json" -X POST -d'{
+
+**Request Example (cURL)**
+
+```curl -H "Content-Type: application/json" -X POST -d'{
    "mealType":"lunch",
    "mealItem":{
   	"main":"burgerMeal",
@@ -85,18 +93,26 @@ curl -H "Content-Type: application/json" -X POST -d'{
   	}
    }
 }'
-http://URL/dpmd/orderingApp/POC
-POST Response Codes
+http://URL/dpmd/orderingApp/POC```
+
+## POST Response Codes
 The General Putnam Motel Diner API follows standard HTTP status codes for success or failure of an API call. 
+
 When a correct order is placed, the server replies to the app with an acknowledgement. This is not displayed to the user.  
+
 Status	Code Description 
 200 - OK	Your meal was successfully ordered.
 402 - Request Failed	Your order timed out. Order was not completed within 15 minutes.
-POST Response Example
-200 OK
-GET/tableNo
+
+**POST Response Example**
+
+```200 OK```
+
+## GET/tableNo
+
 This is the call which is sent when the server wants to get the bill. The GET request includes the table number. The order number is included in the response. Take-out orders are table 99. When this is printed, the customer can pay the bill.
 Response Schema 
+
 Attribute	Data Type	Description
 cost	float	The cost of the item.
 Item1		The 1st selected item as it appears on the menu.
@@ -106,8 +122,10 @@ orderNum	int	The unique number of the order.
 timestamp	date	The time of the request.
 type	string	The requested order.
 Either burgerMeal or salad.
-Response Example 
-curl -X GET "http://URL/tableNo?id=99"
+
+**Response Example**
+
+```curl -X GET "http://URL/tableNo?id=99"
 # response
 {
    "orderNum":123,
@@ -125,4 +143,4 @@ curl -X GET "http://URL/tableNo?id=99"
   	}
    }
 }
-
+```
