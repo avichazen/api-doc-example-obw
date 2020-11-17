@@ -1,0 +1,128 @@
+# References
+The General Putnam Motel Diner API contains the following references:
+POST/meal/lunch/burgerMeal Attributes 
+For the full version of the App, this will be expanded to include additional order items. For the purpose of this POC, only the burger meal is documented. The burger JSON object is included in the POST request which is sent to the kitchen. When an OK response is received, the order is printed in the kitchen so the cook can start cooking.
+Attribute	Data Type	Req.	Description	Default
+bunType	string	Y	The type of bun for the burger.
+Either "wholeWheat", "white", or "glutenFree".	"white"
+burger			Lists the components of the main item of the burgerMeal, the burger itself. 	
+condiment1	string	N	1st condiment selection on the burger.
+Either "none", "ketchup", or "secretSauce".	"none"
+condiment2	string	N	2nd condiment selection on the burger.
+Either "none", "ketchup", or "secretSauce".	"none"
+drink			Describes the drink selection.
+Type is either "Coke", "orangeJuice" or "mineralWater”.
+Size is either "large" or "extraLarge".	"Coke"
+"large"
+ice	boolean	Y	Indicates if the drink should have ice.
+Either "yes" or "no".	"yes"
+main	string	Y	The main course for the meal.
+Either "burgerMeal" or "salad". 	"burgerMeal"
+mealItem			Indicates the item as it appears on the menu.	
+mealType	string		The meal that you can order.
+Either “breakfast”, “lunch” or “dinner”, depending on the time stamp of the order.	
+pattyCook	string	Y	The level of doneness of the patty. 
+Options are:
+•	R - rare 
+•	MR - medium rare
+•	M - medium
+•	D - done
+•	WD - well done	M
+pattyQty	int	Y	Number of patties on the burger.
+Either 1 or 2.	1
+pattyType	string	Y	Describes selected patty type.
+Either "beef", "lamb", or "veggie".	"beef"
+pattyWeight	int	Y	Weight of the patty in grams.
+Either 150 or300.	150
+side1			Describes the 1st side order with the burgerMeal. 
+Type is either "none", "frenchFries" or "onionRings". 
+Size is either "large" or "extraLarge".	"frenchFries"
+"large"
+side2			Describes the 2nd side order with the burgerMeal. 
+Type is either "none", "frenchFries" or "onionRings". 
+Size is either "large" or "extraLarge".	"none"
+sides			Lists the side order/s of the burgerMeal.	
+topping1	string	N	1st topping selection on the burger.
+Either "lettuce", "tomato", "pickles", or "onion".	"none"
+topping2	string	N	2nd topping selection on the burger.
+Either lettuce, tomato, pickles, or onion.	"none"
+topping3	string	N	3rd topping selection on the burger.
+Either lettuce, tomato, pickles, or onion.	"none"
+topping4	string	N	4th topping selection on the burger.
+Either lettuce, tomato, pickles, or onion.	"none"
+Request Example (cURL)
+curl -H "Content-Type: application/json" -X POST -d'{
+   "mealType":"lunch",
+   "mealItem":{
+  	"main":"burgerMeal",
+  	"burger":{
+     	"pattyType":"”beef”",
+     	"pattyQty":1,
+     	"pattyWeightG":300,
+     	"pattyCook":"MR",
+     	"bunType":"wholeWheat",
+     	"condiment1":"ketchup",
+     	"condiment2":"secretSauce",
+     	"topping1":"lettuce",
+     	"topping2":"pickles",
+     	"topping3":"None",
+     	"topping4":"None"
+  	},
+  	"sides":{
+     	"side1":{
+        	"type":"frenchFries",
+        	"size":"large"
+     	},
+     	"side2":{
+        	"type":"none",
+        	"size":""
+     	}
+  	},
+  	"drink":{
+     	"type":"Coke",
+     	"size":"large",
+     	"ice":"yes"
+  	}
+   }
+}'
+http://URL/dpmd/orderingApp/POC
+POST Response Codes
+The General Putnam Motel Diner API follows standard HTTP status codes for success or failure of an API call. 
+When a correct order is placed, the server replies to the app with an acknowledgement. This is not displayed to the user.  
+Status	Code Description 
+200 - OK	Your meal was successfully ordered.
+402 - Request Failed	Your order timed out. Order was not completed within 15 minutes.
+POST Response Example
+200 OK
+GET/tableNo
+This is the call which is sent when the server wants to get the bill. The GET request includes the table number. The order number is included in the response. Take-out orders are table 99. When this is printed, the customer can pay the bill.
+Response Schema 
+Attribute	Data Type	Description
+cost	float	The cost of the item.
+Item1		The 1st selected item as it appears on the menu.
+Item2		The 2nd selected item as it appears on the menu.
+ItemOrdered		The item as it appears on the menu.
+orderNum	int	The unique number of the order.
+timestamp	date	The time of the request.
+type	string	The requested order.
+Either burgerMeal or salad.
+Response Example 
+curl -X GET "http://URL/tableNo?id=99"
+# response
+{
+   "orderNum":123,
+   "timestamp":"2020-01-21T07:44:45-05:00",
+   "Item1":{
+  	"ItemOrdered":{
+     	"type":"burgerMeal",
+     	"Cost":10.99
+  	}
+   }
+   "Item2":{
+  	"ItemOrdered":{
+     	"type":"salad",
+     	"Cost":9.50
+  	}
+   }
+}
+
