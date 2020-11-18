@@ -14,8 +14,6 @@ Our company has been requested to provide a POC (proof of concept) for the app.
 
 If General Putnam Motel Diner management approves POC, they will pay for the final app.
 
-To understand how the diner operated before corona watch [![My Cousin Vinnie](http://www.youtube.com/watch?v=https://www.youtube.com/watch?v=pWC0sKCS5oA) 
-
 ## Authentication
 
 To make an order, the customer needs to insert their full name, email address, and mobile phone number.
