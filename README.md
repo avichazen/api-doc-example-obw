@@ -155,13 +155,9 @@ When a correct order is placed, the server replies to the app with an acknowledg
 
 GET is used to get information that already exists in the server.
 
-## GET Retrieve the currently available meal 
-
-Retrieves the meal type that is available at the current time. 
-
 ## GET/meal
 
-There are no arguments. 
+Retrieves the meal type that is available at the current time. 
 
 ### Response Schema 
 
