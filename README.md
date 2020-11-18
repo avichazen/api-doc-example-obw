@@ -11,7 +11,9 @@ Our company has been requested to provide a POC (proof of concept) for the app. 
 
 ## Authentication
 
-Add text here.
+To make an order, the customer needs to insert their name, surname, email address, and mobile phone number.
+This information will be used to send order status to the customer and the final bill.
+Customers can choose whether they wish to receive promotional content.
 
 ## Errors
 
