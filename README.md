@@ -33,6 +33,7 @@ The General Putnam Motel Diner API supports sending multiple orders in a single 
 ## Content Type
 
 Accept: application/json
+
 Content-Type: application/json
 
 ## Dates & Times
