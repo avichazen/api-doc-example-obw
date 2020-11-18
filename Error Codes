@@ -1,1 +1,10 @@
+## Error Codes
 
+The General Putnam Motel Diner API follows standard HTTP status codes for success or failure of an API call. 
+
+Status | Code Description 
+--- | ---
+200 - OK | Your meal was successfully ordered.
+400 - Bad Request | Your order was unacceptable. For example, the field is pattyType a required field, since you cannot order a burger without a patty.
+404 - Not Found | The main order does not yet exist in the menu.
+402 - Request Failed | Your order timed out. Order was not completed within 15 minutes.
