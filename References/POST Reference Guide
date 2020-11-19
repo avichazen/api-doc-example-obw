@@ -42,9 +42,9 @@ type|string|N|Describes the type of side order for the burgerMeal, either "none"
 
 Attribute|Data Type|Req.|Description|Default
 --- | --- | --- | --- | ---
+ice|boolean|Y|Indicates if the drink should have ice. Either "yes" or "no". Once selected, the burgerMeal order is complete, and the order can be sent to the kitchen.|"yes"
 size|string|Y|The size of the cup, either "large" or "extraLarge".|"large"
 type|string|N|Describes the drink selection, either "none", "Coke", "orangeJuice" or "mineralWater”. If "none" – the burgerMeal order is complete, and the order can be sent to the kitchen. If drink type is selected, proceed to drink size. |"Coke"
-ice|boolean|Y|Indicates if the drink should have ice. Either "yes" or "no". Once selected, the burgerMeal order is complete, and the order can be sent to the kitchen.|"yes"
 
 `Request Example (cURL)`
 
