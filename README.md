@@ -227,3 +227,6 @@ curl -X GET "http://URL/tableNo?id=99"
 }
 
 ````
+# Workflow for Front End Developers
+
+![Lunch-burgerMeal](https://user-images.githubusercontent.com/70967800/99646944-cb86d800-2a59-11eb-8987-32a5ce85148c.png)
