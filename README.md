@@ -1,5 +1,7 @@
 # General Putnam Motel Diner API
 
+Adapted from Alex Fiedler 
+
 ## Introduction
 
 The owners of General Putnam Motel Diner are creating an app so that their customers can order their meals as Corona has caused the diner to close its' doors to the public. Using the app, customers will be able to place take-out orders.
