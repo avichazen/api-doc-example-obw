@@ -48,7 +48,7 @@ type|string|N|Describes the drink selection, either "none", "Coke", "orangeJuice
 
 `Request Example (cURL)`
 
-````
+````JSON
 
 curl -H "Content-Type: application/json" -X POST -d'{
    "mealType":"lunch",
@@ -96,7 +96,7 @@ If the order is OK, the user will receive an order number. In case of an error, 
 
 `POST Response Example`
 
-````
+````JSON
 200 OK
 ````
 
