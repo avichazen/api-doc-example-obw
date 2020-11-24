@@ -14,7 +14,7 @@ The General Putnam Motel Diner API contains the following POST references:
 
 ## POST/lunch/burgerMeal/burger Attributes
 
-Attribute | Data Type | Req. | Description | Default
+Property | Data Type | Req. | Description | Default
 --- | --- | --- | --- | ---
 bunType|string|Y|The type of bun for the burger. Either "none", "wholeWheat", "white", or "glutenFree".|"white"
 condiment1|string|N|1st condiment selection on the burger. Either "none", "ketchup", "mayo", "chili" or "secretSauce". If "none" – proceed to topping1. If condiment is selected, offer condiment2.|"none"
@@ -33,14 +33,14 @@ topping4|string|N|4th topping selection on the burger. Either "none", "lettuce",
 
 ## POST/lunch/burgerMeal/sides Attributes
 
-Attribute|Data Type|Req.|Description|Default
+Property|Data Type|Req.|Description|Default
 --- | --- | --- | --- | ---
 size|string|N|Describes the size of the 2nd side order for the burgerMeal. Size is either "large" or "extraLarge". If "none" – the sides order is complete, and the burgerMeal order should proceed to drink.|"large"
 type|string|N|Describes the type of side order for the burgerMeal, either "none", "frenchFries", "coleslaw", or "onionRings". If "none" – the sides order is complete, and the burgerMeal order should proceed to drink. If side is ordered, proceed to side2. There is a maximum of 3 side orders for each burgerMeal.|"frenchFries"
 
 ## POST/lunch/burgerMeal/drink Attributes
 
-Attribute|Data Type|Req.|Description|Default
+Property|Data Type|Req.|Description|Default
 --- | --- | --- | --- | ---
 ice|boolean|Y|Indicates if the drink should have ice. Either "yes" or "no". Once selected, the burgerMeal order is complete, and the order can be sent to the kitchen.|"yes"
 size|string|Y|The size of the cup, either "large" or "extraLarge".|"large"
@@ -48,7 +48,7 @@ type|string|N|Describes the drink selection, either "none", "Coke", "orangeJuice
 
 `Request Example (cURL)`
 
-````
+````JSON
 
 curl -H "Content-Type: application/json" -X POST -d'{
    "mealType":"lunch",
@@ -96,7 +96,7 @@ If the order is OK, the user will receive an order number. In case of an error, 
 
 `POST Response Example`
 
-````
+````JSON
 200 OK
 ````
 
