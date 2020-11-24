@@ -15,7 +15,7 @@ timestamp|date|The time of the request.
 
 `GET/mealType Response Example`
 
-````
+```JSON
 
 { 
 “mealType”: “breakfast”, 
@@ -23,6 +23,7 @@ timestamp|date|The time of the request.
 } 
 
 ````
+
 ## GET/tableNo
 
 This is the call which is sent to the server when the customer wants to get the bill. The GET request includes the table number. The order number is included in the response. Take-out orders are table 99. When this is printed, the customer can pay the bill.
@@ -38,7 +39,7 @@ type|string|The requested order. Either "burgerMeal", "salad", or "taco".
 
 `GET/tableNo Response Example`
 
-````
+````JSON
 
 curl -X GET "http://URL/tableNo?id=99"
 # response
