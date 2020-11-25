@@ -1,6 +1,6 @@
 # General Putnam Motel Diner API
 
-Adapted from Alex Fiedler 
+Adapted from [Alex Fiedler](https://www.linkedin.com/feed/update/urn:li:activity:6626465471241732096/) 
 
 ## Introduction
 
