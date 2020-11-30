@@ -18,8 +18,8 @@ timestamp|date|The time of the request.
 ```JSON
 
 { 
-   “mealType”: “breakfast”, 
-   “timestamp”: “2020-01-21T07:44:45-05:00” 
+   "mealType":"breakfast", 
+   "timestamp":"2020-01-21T07:44:45-05:00" 
 } 
 
 
