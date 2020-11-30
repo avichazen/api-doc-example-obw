@@ -58,8 +58,8 @@ https://api.gpmd.com
 # Resources 
 
 The General Putnam Motel Diner API contains the following resources:
-[GET Reference Guide](https://github.com/avichazen/api-doc-example-obw/blob/main/References/GET%20Reference%20Guide.md)
-[POST Reference Guide](https://github.com/avichazen/api-doc-example-obw/blob/main/References/POST%20Reference%20Guide.md)
+* [GET Reference Guide](https://github.com/avichazen/api-doc-example-obw/blob/main/References/GET%20Reference%20Guide.md)
+* [POST Reference Guide](https://github.com/avichazen/api-doc-example-obw/blob/main/References/POST%20Reference%20Guide.md)
 
 # Workflow for Front End Developers
 
