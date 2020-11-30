@@ -47,5 +47,4 @@ https://api.gpmd.com
 
 # Workflow for Front End Developers
 
-![simple workflow](https://user-images.githubusercontent.com/70967800/100220832-8ca4c680-2f20-11eb-9f09-318b8abe76c8.png)
-
+![simple workflow](https://user-images.githubusercontent.com/70967800/100592798-42488e80-3300-11eb-8f01-8092296205fd.png)
