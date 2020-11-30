@@ -41,6 +41,7 @@ type|string|The requested order. Either "burgerMeal", "salad", or "taco".
 
 ````JSON
 
+
 curl -X GET "http://URL/tableNo?id=99"
 # response
 {
@@ -51,7 +52,7 @@ curl -X GET "http://URL/tableNo?id=99"
      	"type":"burgerMeal",
      	"Cost":10.99
   	}
-   }
+   },
    "Item2":{
   	"ItemOrdered":{
      	"type":"salad",
