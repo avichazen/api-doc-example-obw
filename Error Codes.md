@@ -1,4 +1,4 @@
-## Errors
+## Error Codes
 
 The General Putnam Motel Diner API follows standard HTTP status codes for success or failure of an API call. 
 
