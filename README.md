@@ -45,6 +45,18 @@ Dinner|YYYY-MM-DDT17:00:00-05:00 - YYYY-MM-DDT11:59:59-05:00 |17:00 - 23:59
 
 https://api.gpmd.com
 
+# Error Codes
+
+The General Putnam Motel Diner API follows standard HTTP status codes for success or failure of an API call.  
+See here for [Error Codes](https://github.com/avichazen/api-doc-example-obw/blob/main/Error%20Codes.md)
+
+# Authentication
+
+See here for [Authentication](https://github.com/avichazen/api-doc-example-obw/blob/main/Authentication.md)
+
+
+
+
 # Workflow for Front End Developers
 
 ![simple workflow](https://user-images.githubusercontent.com/70967800/100220832-8ca4c680-2f20-11eb-9f09-318b8abe76c8.png)
