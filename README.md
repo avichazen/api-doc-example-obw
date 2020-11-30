@@ -4,7 +4,7 @@ Adapted from [Alex Fiedler](https://www.linkedin.com/feed/update/urn:li:activity
 
 ## Introduction
 
-The owners of General Putnam Motel Diner are creating an app so that their customers can order their meals as Corona has caused the diner to close its' doors to the public. Using the app, customers will be able to place take-out orders.
+The owners of General Putnam Motel Diner are creating an app so that their customers can order their meals as Corona has caused the diner to close its doors to the public. Using the app, customers will be able to place take-out orders.
 
 In the future, once the diner re-opens to the public, the management wants to put the app on a tablet so that customers can order from their seats in the diner. 
 
@@ -47,6 +47,4 @@ https://api.gpmd.com
 
 # Workflow for Front End Developers
 
-![simple workflow](https://user-images.githubusercontent.com/70967800/100220832-8ca4c680-2f20-11eb-9f09-318b8abe76c8.png)
-
-
+![simple workflow](https://user-images.githubusercontent.com/70967800/100592798-42488e80-3300-11eb-8f01-8092296205fd.png)
