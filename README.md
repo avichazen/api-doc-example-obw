@@ -63,4 +63,3 @@ The General Putnam Motel Diner API contains the following resources:
 
 # Workflow for Front End Developers
 
-![simple workflow](https://user-images.githubusercontent.com/70967800/101278255-d912c080-37c2-11eb-8b52-c46b68bfbc19.png)
