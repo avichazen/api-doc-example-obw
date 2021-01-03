@@ -16,6 +16,16 @@ Our company has been requested to provide a POC (proof of concept) for the app.
 
 If General Putnam Motel Diner management approves POC, they will pay for the final app.
 
+# Authentication
+
+To make an order, there is an authentication process.
+Refer to [Authentication](https://github.com/avichazen/api-doc-example-obw/blob/main/Authentication.md), for more information. 
+
+# Error Codes
+
+The General Putnam Motel Diner API follows standard HTTP status codes for success or failure of an API call.  
+Refer to [Error Codes](https://github.com/avichazen/api-doc-example-obw/blob/main/Error%20Codes.md) for more information.
+
 ## Order Limits 
 
 The General Putnam Motel Diner API supports sending multiple orders in a single request, with a maximum of 3 orders per request. 
@@ -45,6 +55,12 @@ Dinner|YYYY-MM-DDT17:00:00-05:00 - YYYY-MM-DDT11:59:59-05:00 |17:00 - 23:59
 
 https://api.gpmd.com
 
+# Resources 
+
+The General Putnam Motel Diner API contains the following resources:
+* [GET Reference Guide](https://github.com/avichazen/api-doc-example-obw/blob/main/References/GET%20Reference%20Guide.md)
+* [POST Reference Guide](https://github.com/avichazen/api-doc-example-obw/blob/main/References/POST%20Reference%20Guide.md)
+
 # Workflow for Front End Developers
 
-![simple workflow](https://user-images.githubusercontent.com/70967800/100592798-42488e80-3300-11eb-8f01-8092296205fd.png)
+![workflow](simpleworkflow.png)
