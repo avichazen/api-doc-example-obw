@@ -24,7 +24,7 @@ Refer to [Authentication](https://github.com/avichazen/api-doc-example-obw/blob/
 # Error Codes
 
 The General Putnam Motel Diner API follows standard HTTP status codes for success or failure of an API call.  
-See here for [Error Codes](https://github.com/avichazen/api-doc-example-obw/blob/main/Error%20Codes.md)
+Refer to [Error Codes](https://github.com/avichazen/api-doc-example-obw/blob/main/Error%20Codes.md) for more information.
 
 ## Order Limits 
 
