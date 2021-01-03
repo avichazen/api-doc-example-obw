@@ -19,7 +19,7 @@ If General Putnam Motel Diner management approves POC, they will pay for the fin
 # Authentication
 
 To make an order, there is an authentication process.
-See here for [Authentication](https://github.com/avichazen/api-doc-example-obw/blob/main/Authentication.md)
+Refer to [Authentication](https://github.com/avichazen/api-doc-example-obw/blob/main/Authentication.md), for more information. 
 
 # Error Codes
 
